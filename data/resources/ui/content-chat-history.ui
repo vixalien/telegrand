@@ -18,9 +18,10 @@
               <object class="AdwWindowTitle" id="window_title"/>
             </child>
             <child type="end">
-              <object class="GtkMenuButton">
-                <property name="icon-name">view-more-symbolic</property>
-                <property name="menu-model">chat-menu-model</property>
+              <object class="GtkButton">
+                <property name="icon-name">info-symbolic</property>
+                <property name="tooltip-text" translatable="yes">View Info</attribute>
+                <attribute name="action-name">chat-history.view-info</attribute>
               </object>
             </child>
           </object>
@@ -139,12 +140,4 @@
       </object>
     </child>
   </template>
-  <menu id="chat-menu-model">
-    <section>
-      <item>
-        <attribute name="label" translatable="yes">View Info</attribute>
-        <attribute name="action">chat-history.view-info</attribute>
-      </item>
-    </section>
-  </menu>
 </interface>
